@@ -1,5 +1,56 @@
 <!-- YasinRafia ..Rafia Is My Cute Wife.. Alhamdulillah..
 . -->
+<!--  font-size: 45px;
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1a;
+}
+.buttons input:hover{
+  border-radius: 5px;
+  border: 2px solid white;
+}
+  </style>
+<title>YasinRafia</title>
+</head>
+<body>
+  <div class="calculator">
+    <form>
+          <div class="display">
+    <input  onclick = "YasinRafia()"type="text" id="display" name="display"readonly>
+  </div>
+  <div class="buttons">
+    <input id="c" type="button" value ='C' onclick = "display.value = ''">
+      <input id="opp" type="button" value= "⌫" onclick = "display.value = display.value.toString().slice(0,-1`)">
+    <input id="op" type="button" value ="%"onclick = "YasinRafia(`%`)">
+     <input id="op" type="button" value ="/"onclick = "YasinRafia(`/`)">
+     <input id="m" type="button" value ="1"onclick = "YasinRafia(`1`)">
+     <input id="m" type="button" value ="2"onclick =  "YasinRafia(`2`)">
+     <input id="m" type="button" value ="3"onclick ="YasinRafia(`3`)">
+     <input id="op" type="button" value ="+"onclick = "YasinRafia(`+`)">
+      <input id="m" type="button" value ="4"onclick = "YasinRafia(`4`)">
+     <input id="m" type="button" value ="5"onclick = "YasinRafia(`5`)">
+     <input id="m" type="button" value ="6"onclick = "YasinRafia(`6`)">
+     <input id="op" type="button" value ="-"onclick = "YasinRafia(`-`)">
+      <input id="m" type="button" value ="7"onclick = "YasinRafia(`7`)">
+     <input id="m" type="button" value ="8"onclick = "YasinRafia(`8`)">
+     <input id="m" type="button" value ="9"onclick = "YasinRafia(`9`)">
+     <input id="op" type="button" value ="×"onclick = "YasinRafia(`*`)">
+    <input id="m" type="button" value ="."onclick = "YasinRafia(`.`)">
+    <input id="m" type="button" value ="0"onclick = "YasinRafia(`0`)">
+    <input id="e" type="button" value ="="onclick = "display.value = eval(display.value)">
+  </div>
+    </form>
+  </div>
+  <script>
+  function YasinRafia(char){
+    let disp = document.getElementById("display");
+    disp.value += char;
+    disp.scrollLeft = disp.scrollWidth;
+  }
+  </script>
+</body>
+</html>
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +136,7 @@
   </div>
   <div class="buttons">
     <input id="c" type="button" value ='C' onclick = "display.value = ''">
-      <input id="opp" type="button" value= "⌫" onclick = "display.value = display.value.toString().slice(0,-1`)">
+      <input id="opp" type="button" value= "⌫" onclick = "display.value = display.value.toString().slice(0,-1)">
     <input id="op" type="button" value ="%"onclick = "YasinRafia(`%`)">
      <input id="op" type="button" value ="/"onclick = "YasinRafia(`/`)">
      <input id="m" type="button" value ="1"onclick = "YasinRafia(`1`)">
@@ -114,4 +165,4 @@
   }
   </script>
 </body>
-</html>
+  </html>
